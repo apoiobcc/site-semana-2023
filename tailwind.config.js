@@ -26,6 +26,9 @@ module.exports = {
         'vermelho': 'var(--vermelho)',
         'cinza_claro': 'var(--cinza_claro)',
       },
+      fontSize: {
+        '4xl': '2rem',
+      },
     },
   },
   plugins: [],

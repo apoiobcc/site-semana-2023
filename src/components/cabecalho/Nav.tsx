@@ -8,7 +8,7 @@ const buttonStyle = {
 export default function Nav () {
     return (
         <>
-            <nav className="Nav invisible lg:visible">
+            <nav className="Nav hidden lg:flex">
                 <ul className="Nav__bar flex items-center gap-5">
                     <li className="Nav__bar-sobre" style={buttonStyle}><a>Sobre</a></li>
                     <li className="Nav__bar-calendario" style={buttonStyle}><a>Calendario</a></li>
