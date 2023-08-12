@@ -6,8 +6,9 @@ import Mapa from '@/components/mapa/Mapa'
 
 export default function Home() {
   return (
-    <main>
+    <main className='flex flex-col gap-10 items-center'>
       <Cabecalho/>
+      <Apresentacao />
     </main>
   )
 }
