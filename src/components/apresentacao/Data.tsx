@@ -1,4 +1,4 @@
-export default function () {
+export default function Data () {
     return (
         <div className="Data__container">
             <span className="Data__icon--calendario">CalendarioIcon</span>

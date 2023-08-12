@@ -1,4 +1,4 @@
-export default function () {
+export default function Sobre () {
     return (
         <div className="Sobre__container">
             <div className="Sobre__titulo">Sobre a Semana</div>
