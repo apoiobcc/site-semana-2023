@@ -1,10 +1,11 @@
-export default function () {
+export default function Data () {
     return (
-        <div className="Data__container flex bg-pink-400 border border-black w-[50%] p-4">
-            <span className="Data__icon--calendario flex">CalendarioIcon</span>
-            <span className="Data__texto flex flex-1 flex-col items-center">
-                de 23 a 27<br/>de outubro de 2023
-            </span>
+        <div className="flex flex-row items-center caixa-rosa w-1/2">
+            <span className="material-symbols-outlined" id="icon-calendar">calendar_month</span>
+            <div className="flex flex-col text-4xl mx-5 font-sansitaone">
+                <span className="Data__texto">de <strong className="text-6xl">23</strong> a <strong className="text-6xl">27</strong></span>
+                <span className="">de outubro de 2023</span>
+            </div>
         </div>
     )
 }

@@ -12,14 +12,20 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
+  --border-weight: 0.4rem;
+
   --amarelo: #ffbe0b;
   --laranja: #fb5607;
   --rosa: #ff006e;
+  --rosa-escuro: #d3005b;
   --roxo: #8338ec;
   --azul: #3a86ff;
-  --azul_escuro: #003049;
+  --azul-escuro: #003049;
   --verde: #7ed957;
   --vermelho: #d62828;
+  --cinza-claro: #d9d9d9;
+  --branco: #fefefe;
+  --preto: #252525;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,22 +45,76 @@
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-
-  background-color: var(--azul_escuro);
-
-  width: 100%;
-  height: 100%;
+  color: rgb(var(--foreground-rgb));
+  background: var(--azul-escuro);
+  font-family: 'Sansita One', sans-serif;
 }
 
-@layer components {
-  .menu {
-    @apply bg-gray-300 text-black p-4;
-  }
+.container-amarelo {
+  border: var(--border-weight) solid var(--preto);
+  background-color: var(--amarelo);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.1) 0.4rem, transparent 6px);
+  background-size: 3rem 3rem;
+  color: var(--preto);
+}
+
+.container-rosa {
+  border: var(--border-weight) solid var(--preto);
+  background-color: var(--rosa);
+  background-image: linear-gradient(-45deg, var(--rosa-escuro) 25%, transparent 25%, transparent 50%, var(--rosa-escuro) 50%, var(--rosa-escuro) 75%, transparent 75%, transparent);
+  background-size: 4rem 4rem;
+  color: var(--preto);
+}
+
+.container-azul {
+  border: var(--border-weight) solid var(--preto);
+  background-color: var(--azul);
+  color: var(--preto);
+}
+
+.janela-branca {
+  margin: 5rem 0 0 0;
+  padding: 1rem 3rem;
+  color: var(--preto);
+  background-color: var(--branco);
+  box-shadow:
+    1rem 1rem 0 var(--cinza-claro), /* Sombra lateral esquerda da janela */
+    0px -2.5rem 0px calc((-1) *var(--border-weight)) var(--laranja), /* Borda superior da janela */
+    0px -2.5rem 0 0px var(--preto);
+  border: var(--border-weight) solid var(--preto);
+}
+
+.caixa-rosa {
+  padding: 2rem 2.5rem;
+  margin: 0 0 7rem 0;
+  background-color: var(--rosa);
+  border: var(--border-weight) solid var(--preto);
+  box-shadow:
+    2rem 2rem 0 0 var(--branco),
+    2rem 2rem 0 var(--border-weight) var(--preto);
+  color: var(--preto);
+}
+
+.titulo-rosa {
+  padding: 2rem 2.5rem;
+  margin: 0 0 2rem 0;
+  background-color: var(--rosa);
+  border: var(--border-weight) solid var(--preto);
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.icon-arrow-down {
+  font-size: 5rem;
+}
+
+#icon-calendar {
+  font-size: 7rem;
+}
+
+#icon-coffee {
+  font-size: 7rem;
 }
