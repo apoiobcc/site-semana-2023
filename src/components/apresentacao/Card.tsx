@@ -1,8 +1,10 @@
-export default function Card () {
+const Card = ({style, destaque, icon}) => {
     return (
-        <div className="Card__container">
-            <span className="Card__icon--coffee-break">Coffee-break-icon</span>
-            <div className="Card__container--text">Coffee Break</div>
+        <div className={`${style} p-10 pb-20 pt-20 flex flex-col justify-center items-center`}>
+            <span className="material-symbols-outlined" id="icon-coffee">{icon}</span>
+            <div className="text-3xl font-sansitaone text-center">{destaque}</div>
         </div>
     )
 }
+
+export default Card;
