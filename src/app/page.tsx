@@ -10,10 +10,12 @@ const Home = () => {
   return (
     <main className='flex flex-col items-center'>
       <Cabecalho/>
-      <Apresentacao/>
-      <Aviso titulo="Calendario"/>
-      <Aviso titulo="Como Chegar"/>
-      <Aviso titulo="Colaboradores"/>
+      <div className='flex flex-col items-center w-full max-w-[1800px] p-12'>
+        <Apresentacao/>
+        <Aviso titulo="Calendario"/>
+        <Aviso titulo="Como Chegar"/>
+        <Aviso titulo="Colaboradores"/>
+      </div>
     </main>
   )
 }

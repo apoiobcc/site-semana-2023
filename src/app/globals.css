@@ -73,6 +73,9 @@ body {
 }
 
 .janela-branca {
+  display: flex;
+  flex-direction: column;
+
   margin: 5rem 0 0 0;
   padding: 1rem 3rem;
   color: var(--preto);
@@ -100,7 +103,7 @@ body {
   margin: 0 0 2rem 0;
   background-color: var(--rosa);
   border: var(--border-weight) solid var(--preto);
-  font-size: 3rem;
+  font-size: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
