@@ -152,3 +152,15 @@ body {
   width: clamp(250px, 20vw, 350px);
   height: clamp(350px, 25vw, 450px);
 }
+
+.calendar-icon {
+  width: 100px;
+}
+
+.calendar-text {
+  font-size: clamp(24px, 3vw, 32px);
+}
+
+.calendar-text strong {
+  font-size: clamp(32px, 4vw, 56px);
+}
