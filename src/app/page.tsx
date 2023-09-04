@@ -8,7 +8,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <main className='flex flex-col items-center'>
+    <main className='flex flex-col items-center w-[100vw]'>
       <Cabecalho/>
       <div className='flex flex-col items-center w-full max-w-[1800px] p-12'>
         <Apresentacao/>

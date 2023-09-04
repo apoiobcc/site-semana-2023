@@ -132,7 +132,7 @@ body {
   height: 100%;
 }
 
-.carousel-image img {
+.carousel-image {
   width: 100%;
   height: clamp(300px, 45vw, 750px);
 }
@@ -142,4 +142,13 @@ body {
   text-align: center;
   /* font-size: 1.5vw; */
   font-size: clamp(24px, 2vw, 32px);
+}
+
+.carousel-button img {
+  width: clamp(50px, 5vw, 70px);
+}
+
+.cards {
+  width: clamp(250px, 20vw, 350px);
+  height: clamp(350px, 25vw, 450px);
 }
