@@ -5,6 +5,7 @@ import Cabecalho from '@/components/cabecalho/Cabecalho'
 import Calendario from '@/components/calendario/Calendario'
 import Mapa from '@/components/mapa/Mapa'
 import React from 'react'
+import Apoio from '@/components/Rodape/Apoio/Apoio'
 
 const Home = () => {
   return (
@@ -14,8 +15,8 @@ const Home = () => {
         <Apresentacao/>
         <Aviso titulo="Calendario"/>
         <Aviso titulo="Como Chegar"/>
-        <Aviso titulo="Colaboradores"/>
       </div>
+      <Apoio/>
     </main>
   )
 }
