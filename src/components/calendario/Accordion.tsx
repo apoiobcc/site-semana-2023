@@ -1,13 +1,12 @@
 import Panel from "./Panel";
 
-export default function () {
+export default function Accordion (props) {
+    const sections = props.cronograma.map((item, index) => (
+        <Panel dia={index} conteudo={item} key={index}/>
+    ))
     return (
         <div className="Accordion__container">
-            <Panel></Panel>
-            <Panel></Panel>
-            <Panel></Panel>
-            <Panel></Panel>
-            <Panel></Panel>
+            {sections}
         </div>
     )
 }
