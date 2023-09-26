@@ -14,12 +14,18 @@ export default function Panel(props) {
     }
     const content = props.conteudo.map((item) => (
         <div className="m-5 bg-gray-200 border-2 border-black">
-            <div className="m-5">
-                <div className="bg-amarelo border-2 border-black"><h3 className="m-3">Das {item.Inicio} às {item.Fim}</h3></div>
-                <div className="ml-5">
-                    <h1 className="text-4xl">{item.Evento}</h1>
-                    <h2 className="text-2xl">{item.Organizador}</h2>
+            <div className="m-5 flex flex-row justify-between">
+                <div>
+                    <div className="bg-amarelo border-2 border-black"><h3 className="m-3">Das {item.Inicio} às {item.Fim}</h3></div>
+                    <div className="ml-5">
+                        <h1 className="text-4xl">{item.Evento}</h1>
+                        <h2 className="text-2xl">{item.Organizador}</h2>
+                    </div>
                 </div>
+                <img src={item.Foto} className="rounded-full border-2 border-black w-52 h-52"/>
+            </div>
+            <div className="m-8">
+                {item.Desc}
             </div>
         </div>
     ));

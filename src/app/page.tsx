@@ -14,7 +14,7 @@ const Home = () => {
       <div className='flex flex-col items-center w-full max-w-[1800px] p-12'>
         <Apresentacao/>
         <Calendario/>
-        <Aviso titulo="Como Chegar"/>
+        <Mapa />
       </div>
       <Apoio/>
     </main>

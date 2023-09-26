@@ -25,7 +25,6 @@ export default function Calendario () {
         }
     useEffect(() => {
         fetchEventos();
-        console.log(cronograma);
     }, [])
     return (
         <div className="Calendario__container h-full w-full bg-yellow-300 m-5">
