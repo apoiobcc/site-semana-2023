@@ -11,7 +11,6 @@ export default function Calendario () {
     const fetchEventos = () => {
         axios.get("https://sheet.best/api/sheets/83242efa-8c9e-4f07-87be-9f8daa6274e6")
             .then(response => {
-                //console.log((response));
                 response.data.forEach(element => {
                     switch(element.Dia){
                         case "23": data[0].push(element); break;
@@ -29,7 +28,7 @@ export default function Calendario () {
         console.log(cronograma);
     }, [])
     return (
-        <div className="Calendario__container">
+        <div className="Calendario__container h-full w-full bg-yellow-300 m-5">
             <Aviso titulo="Calendário"/>
             <Accordion cronograma={cronograma}/>
         </div>
