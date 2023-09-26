@@ -73,6 +73,9 @@ body {
 }
 
 .janela-branca {
+  display: flex;
+  flex-direction: column;
+
   margin: 5rem 0 0 0;
   padding: 1rem 3rem;
   color: var(--preto);
@@ -100,7 +103,7 @@ body {
   margin: 0 0 2rem 0;
   background-color: var(--rosa);
   border: var(--border-weight) solid var(--preto);
-  font-size: 3rem;
+  font-size: clamp(32px, 2vw, 48px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,4 +125,42 @@ body {
 #dev {
   color: white;
   padding: 1rem;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: clamp(300px, 45vw, 750px);
+}
+
+.carousel-description {
+  margin: 2rem 0rem;
+  text-align: center;
+  /* font-size: 1.5vw; */
+  font-size: clamp(24px, 2vw, 32px);
+}
+
+.carousel-button img {
+  width: clamp(50px, 5vw, 70px);
+}
+
+.cards {
+  width: clamp(250px, 20vw, 350px);
+  height: clamp(350px, 25vw, 450px);
+}
+
+.calendar-icon {
+  width: 100px;
+}
+
+.calendar-text {
+  font-size: clamp(24px, 3vw, 32px);
+}
+
+.calendar-text strong {
+  font-size: clamp(32px, 4vw, 56px);
 }
